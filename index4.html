@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>AAF1 Football Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="flag-div">
+        <img width="10%" src="bangladesh.jpg" alt="Bangladeshi flag">
+        <img width="10%" src="flag-of-argentina.webp" alt="Argentinain Flag">
+    </div>
+
+    <div class="scoreboard">
+        <div class="team">
+            <h3>HOME</h3>
+            <h1 class="score" id="home-score">00:00</h1>
+    </div>
+
+    <div class="time">
+        <h4>TIME</h4>
+        <h2>00:00</h2>
+    </div>
+
+    <div class="team">
+        <h3>AWAY</h3>
+        <h1 class="score" id="away-score">00:00</h1>
+    </div>
+</div>
+
+    <button class="btn" id="btn1">Score Home </button>
+    <button class="btn" id="btn2">Score Away </button>
+
+    <script>
+        function button1pressed() {
+            let home_score = document.getElementById("home-score");
+
+            home_score.innerText =
+                parseInt(home_score.innerText) + 1;
+        }
+
+
+        function button2pressed() {
+            let away_score = document.getElementById("away-score");
+
+            away_score.innerText =
+                parseInt(away_score.innerText) + 1;
+        }
+
+
+        let button1 = document.getElementById("btn1");
+        button1.addEventListener("click", button1pressed);
+
+
+        let button2 = document.getElementById("btn2");
+        button2.addEventListener("click", button2pressed);
+
+    </script>
+<body>
+<html>
+
+
